@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+<ScrollView
+    android:layout_marginBottom="50dip" 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#999999"
+	>
+
+<TableLayout android:id="@+id/TableLayout01" 
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent" 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="#fff">
+
+<TableRow android:id="@+id/TableRow002" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    
+<TextView
+android:id="@+id/txtMarquee"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text=""
+android:textSize="14sp"
+android:layout_x="3px"
+android:layout_y="4px"
+android:typeface="sans"
+android:textColor="#0000ff"
+android:background="#000000"
+android:singleLine="true"
+android:ellipsize="marquee"
+android:marqueeRepeatLimit="marquee_forever">
+</TextView>
+</TableRow>  
+
+<TableRow android:id="@+id/TableRow04" android:layout_width="wrap_content" android:layout_height="wrap_content">	
+    <ImageView 
+   android:id="@+id/myGambar" android:layout_centerHorizontal="true"
+   android:src="@drawable/tori"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   />
+</TableRow>
+    
+<TableRow android:id="@+id/TableRow00" android:layout_width="wrap_content" android:layout_height="wrap_content">	
+      <TextView
+        android:id="@+id/txtTanya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.Apakah Anda mengalami gejala Pusing2" />
+</TableRow>    
+
+
+<RadioGroup 
+android:id="@+id/RadioGroup01" 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content">
+			
+	<RadioButton android:text="A. Pilihan A" 
+	android:id="@+id/radA" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:textColor="#000">
+	</RadioButton>
+
+	<RadioButton
+		android:id="@+id/radB"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="B. Pilihan B"
+		android:textColor="#000"></RadioButton>
+				
+	<RadioButton android:text="C. Pilihan C" 
+	android:id="@+id/radC" 
+	android:layout_width="wrap_content" 
+	android:textColor="#000" 
+	android:layout_height="wrap_content">
+	</RadioButton>
+					
+	<RadioButton android:text="D. Pilihan D" 
+	android:id="@+id/radD" 
+	android:layout_width="wrap_content" 
+	android:textColor="#000" 
+	android:layout_height="wrap_content">
+	</RadioButton>
+		
+</RadioGroup>
+
+	
+<TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content">	
+      <TextView
+        android:id="@+id/txtTanyaKe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pertanyaan ke-1" />
+</TableRow>    
+
+</TableLayout>
+</ScrollView>
+</RelativeLayout>

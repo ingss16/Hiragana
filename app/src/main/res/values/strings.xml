@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, list!</string>
+    <string name="app_name">Hiragana</string>
+    <string name="marquee">&lt;b&gt;%1$s&lt;/b&gt;</string>
+    <string name="menu_settings">Settings</string>
+
+</resources>

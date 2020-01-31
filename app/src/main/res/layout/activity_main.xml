@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmenuutama"
+    tools:context="com.example.android.hiragana.MainActivity">
+
+    <ImageButton
+        android:id="@+id/ibtabelhuruf"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_above="@+id/ibbelajar"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/ibdaftarkata"
+        android:layout_toStartOf="@+id/ibdaftarkata"
+        android:background="#0000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ibtabelhuruf"
+        app:layout_constraintBottom_toTopOf="@+id/ibbelajar"
+        app:layout_constraintEnd_toStartOf="@+id/ibdaftarkata"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageButton
+        android:id="@+id/ibdaftarkata"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_above="@+id/iblatihan"
+        android:layout_alignLeft="@+id/iblatihan"
+        android:layout_alignStart="@+id/iblatihan"
+        android:layout_marginBottom="15dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ibdaftarkata"
+        app:layout_constraintBottom_toTopOf="@+id/iblatihan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibtabelhuruf"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageButton
+        android:id="@+id/ibbelajar"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/ibtabelhuruf"
+        android:layout_alignStart="@+id/ibtabelhuruf"
+        android:layout_below="@+id/ibdaftarkata"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ibbelajar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iblatihan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibtabelhuruf" />
+
+    <ImageButton
+        android:id="@+id/iblatihan"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/iblatihan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibbelajar"
+        app:layout_constraintTop_toBottomOf="@+id/ibdaftarkata" />
+
+
+</RelativeLayout>

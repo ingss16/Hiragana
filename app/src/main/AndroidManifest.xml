@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.hiragana">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabelHuruf"  android:label=""/>
+        <activity android:name=".listKategori"  android:label=""/>
+        <activity android:name=".listTittle"  android:label=""/>
+        <activity android:name=".belajar"  android:label=""/>
+        <activity android:name=".belajar_aka"  android:label=""/>
+        <activity android:name=".belajar_sata"  android:label=""/>
+        <activity android:name=".belajar_naha"  android:label=""/>
+        <activity android:name=".belajar_maya"  android:label=""/>
+        <activity android:name=".belajar_rawa"  android:label=""/>
+        <activity android:name=".belajar_tenma1"  android:label=""/>
+        <activity android:name=".belajar_tenma2"  android:label=""/>
+        <activity android:name=".SoalActivity" android:label=""/>
+        <activity android:name=".listSoal" android:label=""/>
+        <activity android:name=".Hasil" android:label=""/>
+
+    </application>
+
+</manifest>
